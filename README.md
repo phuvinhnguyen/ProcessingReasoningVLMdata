@@ -1,10 +1,10 @@
-- [v] https://huggingface.co/datasets/flaviagiammarino/path-vqa
-- [v] https://github.com/simula/ImageCLEFmed-MEDVQA-GI-2023 - about 400MD after zip
-- [v] https://figshare.com/s/3e8ad50db900e82d3b47
-- [v] https://github.com/xiaoman-zhang/PMC-VQA?tab=readme-ov-file - 20GB after zip
-- [v] https://zenodo.org/records/10499039
-- [v] flaviagiammarino/vqa-rad
-- [v] BoKelvin/SLAKE
+- [x] https://huggingface.co/datasets/flaviagiammarino/path-vqa
+- [x] https://github.com/simula/ImageCLEFmed-MEDVQA-GI-2023 - about 400MD after zip
+- [x] https://figshare.com/s/3e8ad50db900e82d3b47
+- [x] https://github.com/xiaoman-zhang/PMC-VQA?tab=readme-ov-file - 20GB after zip
+- [x] https://zenodo.org/records/10499039
+- [x] flaviagiammarino/vqa-rad
+- [x] BoKelvin/SLAKE
 
 
 ## GET DATA
