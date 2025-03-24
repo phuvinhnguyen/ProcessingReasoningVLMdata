@@ -8,11 +8,11 @@ from pathlib import Path
 
 class PMCVQA:
     download_link1 = 'https://huggingface.co/datasets/xmcmic/PMC-VQA/resolve/main/images.zip'
-    download_link2 = 'https://huggingface.co/datasets/xmcmic/PMC-VQA/resolve/main/images_2.zip'
+    # download_link2 = 'https://huggingface.co/datasets/xmcmic/PMC-VQA/resolve/main/images_2.zip'
     huggingface = 'xmcmic/PMC-VQA'
 
     def __init__(self, local_dir='./data'):
-        self.ds = load_dataset(self.huggingface)
+        self.ds = load_dataset(self.huggingface, revision='a44ac85fe26f9abb976dab4268d86e7f77fe7ecc')
         self.local_dir = os.path.join(local_dir, 'PMCVQA')
         os.makedirs(local_dir, exist_ok=True)
 

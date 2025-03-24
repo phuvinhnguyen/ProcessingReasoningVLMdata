@@ -24,6 +24,9 @@ class VQAMed:
                         file.write(chunk)
 
             # Unzip the file
+            print(extract_folder)
+            print(zip_path, os.path.isfile(zip_path))
+
             if not Path(extract_folder).exists():
                 with zipfile.ZipFile(zip_path, "r") as zip_ref:
                     zip_ref.extractall(extract_folder)
@@ -43,7 +46,7 @@ class VQAMed:
                      os.path.join(self.local_dir, 'test/VQAMed2019Test/VQAMed2019_Test_Images/VQAMed2019_Test_Images')),
             'val': (os.path.join(self.local_dir, 'val/ImageClef-2019-VQA-Med-Validation/All_QA_Pairs_val.txt'),
                     os.path.join(self.local_dir, 'val/ImageClef-2019-VQA-Med-Validation/Val_images')),
-            'train': (os.path.join(self.local_dir, 'testdata/VQAMed/train/ImageClef-2019-VQA-Med-Training/All_QA_Pairs_train.txt'),
+            'train': (os.path.join(self.local_dir, 'train/ImageClef-2019-VQA-Med-Training/All_QA_Pairs_train.txt'),
                     os.path.join(self.local_dir, 'train/ImageClef-2019-VQA-Med-Training/Train_images'))
         }
 
