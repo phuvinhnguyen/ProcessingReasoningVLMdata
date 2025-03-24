@@ -1,7 +1,7 @@
 import json
 from datasets import load_dataset
 import os
-from .data import *
+from data import *
 
 class PATHVQA:
     huggingface = 'flaviagiammarino/path-vqa'
@@ -26,4 +26,6 @@ class PATHVQA:
 
 if __name__ == '__main__':
     name = os.path.basename(__file__) + '.json'
-    PATHVQA('./testdata').convert(f'./{name}', 'test')
+    PATHVQA('./testdata').convert(f'./train_{name}', 'train')
+    PATHVQA('./testdata').convert(f'./test_{name}', 'test')
+    PATHVQA('./testdata').convert(f'./validation_{name}', 'validation')

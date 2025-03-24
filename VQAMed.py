@@ -1,5 +1,5 @@
 import json
-from .data import *
+from data import *
 import requests
 import zipfile
 import os
@@ -62,4 +62,6 @@ class VQAMed:
 
 if __name__ == '__main__':
     name = os.path.basename(__file__) + '.json'
-    VQAMed('./testdata').convert(f'./{name}', 'test')
+    VQAMed('./testdata').convert(f'./train_{name}', 'train')
+    VQAMed('./testdata').convert(f'./test_{name}', 'test')
+    VQAMed('./testdata').convert(f'./val_{name}', 'val')

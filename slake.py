@@ -1,5 +1,5 @@
 import json
-from .data import *
+from data import *
 from datasets import load_dataset
 import requests
 import zipfile
@@ -45,4 +45,6 @@ class SLAKE:
 
 if __name__ == '__main__':
     name = os.path.basename(__file__) + '.json'
-    SLAKE('./testdata').convert(f'./{name}', 'test')
+    SLAKE('./testdata').convert(f'./train_{name}', 'train')
+    SLAKE('./testdata').convert(f'./test_{name}', 'test')
+    SLAKE('./testdata').convert(f'./val_{name}', 'validation')

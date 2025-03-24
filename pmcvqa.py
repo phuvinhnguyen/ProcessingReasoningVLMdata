@@ -1,5 +1,5 @@
 import json
-from .data import *
+from data import *
 from datasets import load_dataset
 import requests
 import zipfile
@@ -51,4 +51,5 @@ class PMCVQA:
 
 if __name__ == '__main__':
     name = os.path.basename(__file__) + '.json'
-    PMCVQA('./testdata').convert(f'./{name}', 'test')
+    PMCVQA('./testdata').convert(f'./train_{name}', 'train')
+    PMCVQA('./testdata').convert(f'./test_{name}', 'test')

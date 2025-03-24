@@ -1,7 +1,7 @@
 import json
 from datasets import load_dataset
 import os
-from .data import *
+from data import *
 
 class VQARAD:
     huggingface = 'flaviagiammarino/vqa-rad'
@@ -26,4 +26,5 @@ class VQARAD:
 
 if __name__ == '__main__':
     name = os.path.basename(__file__) + '.json'
-    VQARAD('./testdata').convert(f'./{name}', 'test')
+    VQARAD('./testdata').convert(f'./train_{name}', 'train')
+    VQARAD('./testdata').convert(f'./test_{name}', 'test')

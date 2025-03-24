@@ -4,7 +4,7 @@ import zipfile
 import os
 from pathlib import Path
 import csv
-from ReasoningVLMdata.data import *
+from data import *
 
 class OphthalVQA:
     download_labels = 'https://figshare.com/ndownloader/files/45711882?private_link=3e8ad50db900e82d3b47'
@@ -50,4 +50,4 @@ class OphthalVQA:
 
 if __name__ == '__main__':
     name = os.path.basename(__file__) + '.json'
-    OphthalVQA('./testdata').convert(f'./{name}', 'test')
+    OphthalVQA('./testdata').convert(f'./train_{name}', 'train')
