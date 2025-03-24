@@ -9,9 +9,10 @@
 
 ## GET DATA
 ```bash
-cd ReasoningVLMdata
+git clone https://github.com/phuvinhnguyen/ProcessingReasoningVLMdata.git
+cd ProcessingReasoningVLMdata
 chmod +x run.sh
-./run_all.sh ./
+./run.sh ./
 ```
 
 ## OUTPUT FORMAT
